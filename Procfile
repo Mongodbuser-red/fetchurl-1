@@ -1,1 +1,1 @@
-worker: python3 -m hu.py
+worker: python -m hu.py
