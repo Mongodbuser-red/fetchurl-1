@@ -3,7 +3,7 @@ This Tool will fetch ``Direct Download link`` of hd wallpaper.
 
 # How to use!
 #### Easy to use Maybe!
-```sh 
+```python3
 git clone https://github.com/NobArxtx/fetchurl.git
 # To download requirements
 python -m pip install -r requirements.txt 
