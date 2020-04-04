@@ -21,5 +21,5 @@ python Fetch.py
  ## For Android User 
  ### Download Pydroid To Run
  #### To Download Pydroid 3
- [``Click here``](https://play.google.com/store/apps/details?id=ru.iiec.pydroid3) To download pydroid 3 \n
+ [``Click here``](https://play.google.com/store/apps/details?id=ru.iiec.pydroid3) To download pydroid 3 <br>
  You Also need to download Pydroid Repository Plugin [``Click here``](https://play.google.com/store/apps/details?id=ru.iiec.pydroid3.quickinstallrepo)
