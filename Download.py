@@ -30,8 +30,17 @@ if inlkih is 'n' or inlkih is 'N':
 	os.system('python fetch.py')
 while True:
 	image_url_file_name = input(greencolor+f'{startoftexdf}Enter URL File Name \n(with extension)\n{startoftexdf} ')
+	if image_url_file_name is None:
+		continue
+	else:
+		if not os.path.isfile(image_url_file_name):
+			print(f'{startoftexdf}\033[31;1;1mFile is Not Exist in Current Directory')
+			continue
+		else:
+			break
+while True:
 	image_file_name = input(greencolor+f'{startoftexdf}Enter Image File Name \n(Without extension)\n{startoftexdf} ')
-	if image_url_file_name is None or image_file_name is None:
+	if image_file_name is None:
 		continue
 	else:
 		break
@@ -88,7 +97,7 @@ else:
 	currenuiy = datetime.now().strftime('%b %d %Y | Anon~Bot | %H:%M:%S')
 while True:
 	try:
-		print(f'{startoftexdf}'+greencolor+'Want to add Custom font and Custom Water Mark\n(y\n)\n{startoftexdf}',end='')
+		print(f'{startoftexdf}'+greencolor+f'Want to add Custom font and Custom Water Mark\n(y\n)\n{startoftexdf}',end='')
 		ingigh = input()
 		if ingigh == 'N' or ingigh == 'n' or ingigh == 'y' or ingigh == 'Y':
 			break
@@ -100,9 +109,9 @@ if ingigh == 'N' or ingigh == 'n':
 	watermarkb ='By @But_why_god'
 	watermark_font = "Roboto-Bold.ttf"
 else:
-	print(f'{startoftexdf}'+greencolor+'Enter Custom Water Mark\n{startoftexdf} ',end='')
+	print(f'{startoftexdf}'+greencolor+f'Enter Custom Water Mark\n{startoftexdf} ',end='')
 	watermarkb = input()
-	print(f"{startoftexdf}"+greencolor+"Enter Custom Font File Name For Water Mark\nDon't have Font File Press Enter\n{startoftexdf} ",end='')
+	print(f"{startoftexdf}"+greencolor+f"Enter Custom Font File Name For Water Mark\nDon't have Font File Press Enter\n{startoftexdf} ",end='')
 	watermark_font = input()
 	if not watermark_font:
 		watermark_font = "Roboto-Bold.ttf"
