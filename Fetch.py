@@ -65,7 +65,7 @@ else:
 			numimagelolko = numberhgg[0]
 			print(greencolor+f'{startoftexdf}Total Images Found [{numimagelolko}]\n{startoftexdf}Total Pages Found [{numpagere}]\n')
 			
-aui = 2
+aui = 1
 pagefindtr = 'placeholder\=\"Page\s\#\s\/\s(\d*)\"\>'
 
 while True:
@@ -90,7 +90,7 @@ while aui <= int(numpfhg):
 	list_folder = f.findall(au.text)
 	lenlisto = len(list_folder)
 	ayy = 0
-	while ayy < lenlisto-1:
+	while ayy <= lenlisto:
 		listnum = list_folder[ayy]
 		imagesubname = listnum[0]
 		imagefolder = listnum[1]
@@ -99,7 +99,7 @@ while aui <= int(numpfhg):
 		imageurl = "https://images{}.alphacoders.com/{}/{}.{}\n"
 		fileho = open(newfilenum_txt,'a')
 		fileho.write(imageurl.format(imagesubname,imagefolder,imagename,extename))
-		print(greencolor+f'{startoftexdf}{imageurl} \nAdded Successfully'.format(imagesubname,imagefolder,imagename,extename))
+		print(greencolor+f'{startoftexdf}{imageurl} \nAdded Successfully\n{aui}'.format(imagesubname,imagefolder,imagename,extename))
 		ayy += 1
 	fileho.close()
 	list_folder = []
