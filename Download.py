@@ -69,9 +69,11 @@ def getimage():
 		else:
 			downimg(randomurl)
 	else:
-		urllib.request.urlretrieve('https://raw.githubusercontent.com/NobArxtx/urkk/master/imageurl.txt','imageurl.txt')
-		urlnuo = open('imageurl.txt','r')
-		ranho = random.randint(1,file_len('imageurl.txt')+1)
+		if not os.path.isdir('resources'):
+			os.system('mkdir resources')
+		urllib.request.urlretrieve('https://raw.githubusercontent.com/NobArxtx/urkk/master/imageurl.txt','resources/imageurl.txt')
+		urlnuo = open('resources/imageurl.txt','r')
+		ranho = random.randint(1,file_len('resources/imageurl.txt')+1)
 		holo = urlnuo.readlines()
 		randomurl = holo[ranho]
 		bolooh = randomurl
