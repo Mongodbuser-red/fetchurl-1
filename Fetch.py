@@ -1,4 +1,4 @@
-#Made BY @But_why_god(Anon-Bot) If u edit this par then you will die in hell
+#Made BY @But_why_god(Anon-Bot) If u edit this part then you will die in hell
 import requests
 import re
 import time
